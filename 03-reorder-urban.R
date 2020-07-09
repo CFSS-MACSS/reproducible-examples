@@ -1,6 +1,6 @@
 ## Use the script below to generate a reproducible example
 ## using the reprex package. Once you generate it, post it on
-## https://github.com/uc-cfss/Discussion/issues/132
+## https://github.com/uc-cfss/Discussion/issues/145
 ## 
 ## Hint: look at the input and outfile arguments to reprex()
 

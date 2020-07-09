@@ -8,8 +8,8 @@ reprex(input = "01-drop-na.R")
 
 ## For those on the RStudio Server, you cannot access your clipboard.
 ## Instead, use the method above and when prompted
-## to "Open the output file for manual copy?", select "Yes". You can then copy and paste
-## from the window.
+## to "Open the output file for manual copy?", select "Yes".
+## You can then copy and paste from the window.
 ## 
 ## Alternatively you can paste the code as the first argument to the function.
 ## Just be sure to wrap it in {}

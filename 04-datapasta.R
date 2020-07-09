@@ -2,7 +2,7 @@
 ## using the reprex package. Use datapasta::dpasta() to create
 ## `urban` in the script rather than relying on the source
 ## CSV file. Once you generate it, post it on
-## https://github.com/uc-cfss/Discussion/issues/133
+## https://github.com/uc-cfss/Discussion/issues/146
 
 library(tidyverse)
 library(here)
