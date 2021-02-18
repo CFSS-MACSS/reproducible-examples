@@ -1,6 +1,6 @@
 ## Copy the code below to generate a reproducible example
 ## using the reprex package. Once you generate it, post it on
-## https://github.com/uc-cfss/Discussion/issues/152
+## https://github.com/uc-cfss/Discussion/issues/180
 
 library(dplyr)
 library(ggplot2)
