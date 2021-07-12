@@ -7,35 +7,9 @@
 reprex(input = "01-drop-na.R")
 
 ## For those on the RStudio Server, you cannot access your clipboard.
-## Instead, use the method above and when prompted
-## to "Open the output file for manual copy?", select "Yes".
-## You can then copy and paste from the window.
-## 
-## Alternatively you can paste the code as the first argument to the function.
-## Just be sure to wrap it in {}
-reprex(
-  x = {
-    library(dplyr)
-    library(ggplot2)
-    library(rcfss)
-    
-    # load the data
-    data("mass_shootings")
-    
-    # using reorder() and aggregating the data before plotting
-    mass_shootings %>%
-      count(race) %>%
-      drop_na(race) %>%
-      ggplot(mapping = aes(x = reorder(race, -n), y = n)) +
-      geom_col() +
-      labs(
-        title = "Mass shootings in the United States (1982-2019)",
-        x = "Race of perpetrator",
-        y = "Number of incidents"
-      )
-  },
-  style = TRUE
-)
+## Instead, use the method above and manually copy and paste
+## from the window.
+
 
 ## 02-reorder-graph.R
 ##
@@ -45,37 +19,17 @@ reprex(
 ## Alternatively, run
 reprex(input = "02-reorder-graph.R")
 
-## or
-reprex(
-  x = {
-    library(tidyverse)
-    library(rcfss)
-    
-    # load the data
-    data("mass_shootings")
-    
-    # using forcats::fct_infreq() and using the raw data for plotting
-    mass_shootings %>%
-      drop_na(race) %>%
-      ggplot(mapping = aes(x = fct_infreq(race))) +
-      geom_bar() +
-      coord_flip() +
-      labs(
-        title = "Mass shootings in the United States (1982-2019)",
-        x = "Race of perpetrator",
-        y = "Number of incidents"
-      )
-  }
-)
 
 ## 03-reorder-urban.R
 ##
-## Cannot be copied to the clipboard since the code
-## executes in a different working directory. Even
-## here::here() won't work. Instead, run it directly
-## from the source file. Note outfile = NA is necessary
-## to ensure the script is run from the current working directory
-reprex(input = "03-reorder-urban.R", outfile = NA)
+## Copy the code to the clipboard and run the function below.
+## This will ensure the working directory is set to the project
+## folder.
+reprex(wd = ".")
+
+## To run directly from the script, use below
+reprex(input = "03-reorder-urban.R", wd = ".")
+
 
 ## 04-datapasta.R
 ##
@@ -89,4 +43,4 @@ here::here("data", "urbanization-state.csv") %>%
 
 ## Then replace the original read_csv() operation with the new code
 ## and run it directly from the source file
-reprex(input = "04-datapasta.R", outfile = NA)
+reprex(input = "04-datapasta.R", wd = ".")
