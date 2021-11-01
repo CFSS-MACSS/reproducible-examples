@@ -1,8 +1,8 @@
 ## Use the script below to generate a reproducible example
 ## using the reprex package. Once you generate it, post it on
-## https://github.com/uc-cfss/Discussion/issues/182
+## https://github.com/uc-cfss/reproducible-examples-and-git/issues/3
 ## 
-## Hint: look at the input and outfile arguments to reprex()
+## Hint: look at the input and wd arguments to reprex()
 
 library(tidyverse)
 library(here)
