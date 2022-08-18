@@ -1,6 +1,6 @@
 ## Use the script below to generate a reproducible example
 ## using the reprex package. Once you generate it, post it on
-## https://github.com/uc-cfss/reproducible-examples-and-git/issues/3
+## https://github.coecis.cornell.edu/cis-fa22/discussion/issues/3
 ## 
 ## Hint: look at the input and wd arguments to reprex()
 

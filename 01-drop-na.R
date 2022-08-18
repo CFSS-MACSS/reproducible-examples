@@ -1,14 +1,14 @@
 ## Copy the code below to generate a reproducible example
 ## using the reprex package. Once you generate it, post it on
-## https://github.com/uc-cfss/reproducible-examples-and-git/issues/1
+## https://github.coecis.cornell.edu/cis-fa22/discussion/issues/1
 
 library(dplyr)
 library(ggplot2)
 
-# get data from rcfss package
+# get data from rcis package
 # install latest version if not already installed
-# devtools::install_github("uc-cfss/rcfss")
-library(rcfss)
+# devtools::install_github("cis-ds/rcis")
+library(rcis)
 
 # load the data
 data("mass_shootings")

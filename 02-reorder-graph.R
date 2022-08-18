@@ -1,13 +1,13 @@
 ## Copy the code below to generate a reproducible example
 ## using the reprex package. Once you generate it, post it on
-## https://github.com/uc-cfss/reproducible-examples-and-git/issues/2
+## https://github.coecis.cornell.edu/cis-fa22/discussion/issues/2
 
 library(tidyverse)
 
-# get data from rcfss package
+# get data from rcis package
 # install latest version if not already installed
-# devtools::install_github("uc-cfss/rcfss")
-library(rcfss)
+# devtools::install_github("cis-ds/rcis")
+library(rcis)
 
 # load the data
 data("mass_shootings")
